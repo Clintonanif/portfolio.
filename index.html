@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anifalaje Clinton | The Actuarial Dev</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="main-wrapper nav-container">
+            <a href="#" class="logo">TheActuarialDev.</a> 
+           
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           
+            <div class="nav-icons">
+                <a href="https://github.com/Clintonanif" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/clinton-anifalaje/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="main-wrapper hero-grid">
+                <div class="hero-content">
+                    <h1>Actuarial Science meets<br> <span class="highlight">DevSecOps.</span></h1>
+                    <p> What happens when an actuary dives into cybersecurity and cloud DevOps?
+                        You get someone who doesn't just analyze data, but actively anticipates the risks behind it. I use my background in statistical risk management alongside tools like SQL, AWS, and Power BI to tackle tricky technical problems. At the end of the day, my goal is simple: help organizations find the insights they need to grow, while locking down the cloud infrastructure that keeps their data safe.</p>
+                    <a href="#work" class="cta-button">View Case Studies</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="recent-work-section">
+            <div class="main-wrapper">
+                <h2>Selected Projects</h2>
+
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img src="Assets/Screenshot 2026-01-24 021221.png" alt="Contraception Safety Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <span class="category">PHARMACOVIGILANCE / RWE</span>
+                        <h3>The Contraception Safety Paradox</h3>
+                        <p>
+                            Do "natural" wellness trends align with clinical reality? I analyzed <strong>12,425 FDA adverse event reports</strong> to compare the safety profiles of the Copper IUD vs. Hormonal Pills. 
+                            The findings revealed a <strong>6.5x higher clot risk</strong> for pills, but a surprising <strong>2.5x higher depression signal</strong> for the non-hormonal IUD.
+                        </p>
+                        <p class="tech-stack">Python (Pandas) &bull; Power BI &bull; Pharmacovigilance</p>
+                        <a href="https://github.com/TheDataPharm/contraception-safety-analysis" target="_blank" class="text-link">View Code & Analysis &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="project-card reversed">
+                    <div class="project-image-container" style="padding: 0; background: #000;">
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                            <iframe 
+                                src="https://www.loom.com/embed/cd741ea34ee74b01a1d20676bc423d3d" 
+                                frameborder="0" 
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen 
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="category">PHARMACOVIGILANCE / RWE</span>
+                        <h3>GLP-1 Safety Signal Dashboard</h3>
+                        <p>
+                            Analyzed <strong>200,000+ FDA adverse event reports</strong> to distinguish between drug-induced risks and patient comorbidities. 
+                            My pipeline identified a <strong>2.3x higher hospitalization rate</strong> in diabetic patients vs. obesity patients, validated via Reporting Odds Ratio (ROR=0.92).
+                        </p>
+                        <p class="tech-stack">Python (Pandas) &bull; Power BI &bull; Statistics (SciPy) &bull; ETL</p>
+                        <a href="https://github.com/TheDataPharm/faers-adverse-event-dashboard" target="_blank" class="text-link">View Code & Analysis &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img src="Assets/sentiment_wordcloud.png" alt="Patient Sentiment Word Cloud" style="background-color: #f0f0f0; object-fit: contain;"> 
+                    </div>
+                    <div class="project-content">
+                        <span class="category">NLP / HEALTHCARE ANALYTICS</span>
+                        <h3>Real-World Patient Sentiment Analysis</h3>
+                        <p>
+                            Clinical trials count side effects; this project measures their <em>impact</em>. I built an NLP pipeline to analyze <strong>3,033 patient narratives</strong> for GLP-1 agonists.
+                            Using custom Aspect-Based Sentiment Analysis, I discovered that while nausea is the most frequent complaint, rare <strong>anxiety-related events</strong> drive a <strong>7x higher negative sentiment</strong> score (-0.48), acting as a silent adherence killer.
+                        </p>
+                        <p class="tech-stack">Python (SpaCy) &bull; LDA Topic Modeling &bull; VADER Sentiment</p>
+                        <a href="https://github.com/TheDataPharm/GLP1-Sentiment-Analysis-RWE" target="_blank" class="text-link">View Code & Analysis &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="project-card reversed">
+                    <div class="project-image-container">
+                        <img src="Assets/pexels-jorge-jesus-137537-614117.jpg" alt="Oncology Financial Data Analysis">
+                    </div>
+                    <div class="project-content">
+                        <span class="category">HEOR / BIOSTATISTICS</span>
+                        <h3>Oncology Financial Toxicity Analysis</h3>
+                        <p>
+                            Designed a cross-sectional study (n=73) to assess catastrophic healthcare expenditure among breast cancer patients at LUTH.
+                            Analyzed income stratification and direct medical costs using <strong>Kruskal-Wallis tests</strong>, revealing significant gaps in health insurance coverage (p=0.433).
+                        </p>
+                        <p class="tech-stack">SPSS &bull; Excel &bull; Statistical Modelling &bull; Policy Research</p>
+                        <a href="#" class="text-link">Read the Abstract &rarr;</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="main-wrapper">
+                <div class="about-grid">
+                   
+                    <div class="about-text">
+                        <h2>Beyond the <br> <span class="highlight">Risk Profile. </span></h2>
+                        <p>
+                            I am <strong>Anifalaje Clinton</strong>, a Data Analyst and DevSecOps professional with a passion for securing digital assets and uncovering hidden insights through data.
+                        </p>
+                        <p>
+                            I graduated with a <strong>Second Class Honours (4.02/5.00)</strong> from the <strong>University of Lagos</strong>, where I built a solid foundation in Actuarial Science and Insurance. While my academic background is rooted in statistical risk management, my career focus has evolved toward the computational world of Cloud DevOps and Cybersecurity.
+                        <p>
+                            Today, I leverage my expertise in <strong>Risk Management, Vulnerability Assessment </strong> and <strong>Cloud Computing </strong>backed by my Cisco CyberOps Associate certification to help organizations navigate complex technical landscapes. My work aims to bridge the gap between data driven, decision making and robust security protocols, ensuring that sensitive information remains protected in an increasingly connected world.
+                        </p>
+                       
+                        <p class="personal-note">
+                            <strong>Offline:</strong> You'll find me on the pitch being the closest thing the world as seen to CR7 or listening to some Afrobeat.
+                        </p>
+                    </div>
+
+                    <div class="skills-container">
+                        <h3>Tech Stack</h3>
+                        <div class="skill-tags">
+                            <span>Python (Pandas, Scikit-learn)</span>
+                            <span>NLP (SpaCy)</span>
+                            <span>AWS</span>
+                            <span>SQL</span>
+                            <span>linux</span>
+                            <span>Power BI</span>
+                            <span>Git</span>
+                        </div>
+
+                        <h3 style="margin-top: 2rem;">Domain Expertise</h3>
+                        <div class="skill-tags">
+                            <span>Data Analysis</span>
+                            <span>Cloud Computing</span>
+                            <span>Vulnerability Assessment</span>
+                            <span>Compliance and Governance</span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="main-wrapper contact-content">
+                <h2>Ready to <span class="highlight">Collaborate?</span></h2>
+                <p>I am currently available for Cloud Computing roles and research collaborations in InsureTech.</p>
+               
+                <a href="mailto:clintonanif@gmail.com" class="email-button">Findclintonanif@gmail.com</a>
+               
+                <div class="social-links-row">
+                    <a href="" target="_blank">X (Twitter)</a>
+                    <a href="https://www.linkedin.com/in/clinton-anifalaje" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Clintonanif" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="main-wrapper" style="padding: 2rem 24px; text-align: center; border-top: 1px solid #222;">
+            <p style="font-size: 0.9rem; color: #666;">&copy; 2026 Anifalaje Clinton. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

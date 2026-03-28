@@ -1,0 +1,463 @@
+/* =========================================
+   1. GLOBAL RESET & TYPOGRAPHY
+   ========================================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #0a0a0b; /* Deep Black from image */
+  color: #94a3b8; /* Muted Slate for readability */
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Use Monospace for Technical elements */
+h1, h2, h3, .logo, .nav-links, .category, .tech-stack, .skill-tags, .email-button, .cert-badge {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* =========================================
+   2. LAYOUT UTILITIES
+   ========================================= */
+.main-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================================
+   3. NAVIGATION BAR
+   ========================================= */
+.navbar {
+  padding: 1.5rem 0;
+  background-color: transparent;
+  position: relative;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #60a5fa; /* Primary Blue from image */
+}
+
+.nav-icons a {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.nav-icons a:hover {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+/* =========================================
+   4. HERO SECTION (Refined for Image Style)
+   ========================================= */
+.hero-section {
+  padding: 120px 0 100px;
+}
+
+/* New Pill Badge Style from image */
+.cert-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid #3b82f6;
+  border-radius: 100px;
+  color: #60a5fa;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem); /* Responsive scaling */
+  color: #fff;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.highlight {
+  color: #60a5fa;
+}
+
+/* Gradient Text Effect from image */
+.highlight {
+  background: linear-gradient(90deg, #60a5fa 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+  color: #94a3b8;
+}
+
+/* Primary Button Style from image */
+.cta-button {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #60a5fa;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   5. PROJECTS SECTION
+   ========================================= */
+.recent-work-section {
+   padding: 100px 0;
+}
+
+.recent-work-section h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  border-left: 4px solid #60a5fa;
+  padding-left: 1rem;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 8rem;
+}
+
+.project-card.reversed {
+  flex-direction: row-reverse;
+}
+
+.category {
+  color: #60a5fa;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-image-container {
+  flex: 1.2;
+  border-radius: 8px
+  overflow: hidden;
+  background-color: #111113;
+  border: 1px solid #1e293b;
+}
+
+.project-image-container img {
+  width: 100%;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.project-image-container:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.project-content {
+  flex: 1;
+}
+
+.category {
+  color: #60a5fa;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-content h3 {
+  font-size: 1.8rem;
+  color: #60a5fa;
+  margin: 0 0 1rem 0;
+}
+
+.project-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.tech-stack {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 2rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.text-link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #60a5fa;
+  padding-bottom: 4px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.text-link:hover {
+  color: #60a5fa;
+}
+
+/* =========================================
+   6. ABOUT SECTION
+   ========================================= */
+.about-section {
+  padding: 100px 0;
+  border-top: 1px solid #1e293b;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Text is wider than skills */
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: #c0c0c0;
+}
+
+.personal-note {
+  font-size: 0.9rem !important;
+  color: #666 !important;
+  margin-top: 2rem;
+  font-family: 'IBM Plex Mono', monospace;
+  border-left: 2px solid #333;
+  padding-left: 1rem;
+}
+
+/* Skills Container */
+.skills-container h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tags span {
+  background-color: #111113;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: 1px solid #1e293b;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.skill-tags span:hover {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+/* =========================================
+   7. CONTACT SECTION
+   ========================================= */
+.contact-section {
+  padding: 120px 0;
+  text-align: center;
+  background: linear-gradient(180deg, #0a0a0b 0%, #000 100%);
+}
+
+.contact-content h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.contact-content p {
+  font-size: 1.2rem;
+  color: #9C9C9C;
+  margin-bottom: 3rem;
+}
+
+/* Big Email Button */
+.email-button {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #60a5fa;
+  padding-bottom: 5px;
+  transition: all 0.3s;
+  margin-bottom: 3rem;
+  word-wrap: break-word; /* Prevents overflow on mobile */
+}
+
+.email-button:hover {
+  color: #60a5fa;
+  border-color: #fff;
+}
+
+/* Social Links Row */
+.social-links-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-links-row a {
+  color: #666;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.social-links-row a:hover {
+  color: #60a5fa;
+}
+
+/* =========================================
+   8. MOBILE RESPONSIVENESS
+   ========================================= */
+
+/* Default Desktop: Hide Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #1e293b;
+}
+
+/* Mobile Rules (< 768px) */
+@media (max-width: 768px) {
+  
+  /* Show Hamburger */
+  .hamburger {
+    display: block;
+    z-index: 200;
+  }
+
+  /* Hamburger Animation */
+  .hamburger.active .bar:nth-child(2) { opacity: 0; }
+  .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  /* Navigation Drawer */
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #0a0a0b;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 2rem;
+    transition: 0.3s ease-in-out;
+    border-top: 1px solid #222;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  /* Hide Desktop Icons */
+  .nav-icons { display: none; }
+
+  /* Typography Adjustments */
+  .hero-content h1 { font-size: 2.5rem; }
+  .about-text h2 { font-size: 2rem; }
+  .contact-content h2 { font-size: 2rem; }
+  .email-button { font-size: 1rem; }
+
+  /* Stack Projects */
+  .project-card, 
+  .project-card.reversed {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .project-image-container { width: 100%; }
+  
+  /* Ensure image is top on mobile for reversed cards */
+  .project-card.reversed .project-image-container { order: -1; }
+
+  /* Stack About Section */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+   
+}
